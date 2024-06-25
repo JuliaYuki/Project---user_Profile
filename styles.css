@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    font-family: sans-serif;
+    background: linear-gradient(to right, #cf7759, #7052dd);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+}
+
+.search-bar svg {
+    margin-right: 8px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.header-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-actions button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.header-actions button:hover {
+    background-color: #0062cc;
+}
+
+.header-actions svg {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.header-actions img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.user-profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.user-profile-header img {
+    width: 130px;
+    height: 135px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #c991ee;
+    margin-bottom: 10px;
+}
+
+.user-profile-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.user-profile-header p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.user-profile-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.stats-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.stats-item span {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.stats-item p {
+    font-size: 14px;
+}
+
+.user-profile-stats button {
+    background-color: rgba(255, 255, 255, 23%);
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.user-profile-stats button:hover {
+    background-color: rgba(255, 255, 255, 60%);
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.user-profile-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-profile-tabs a {
+    display: inline-block;
+    padding: 10px 15px;
+    border-bottom: 2px solid transparent;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: border-bottom-color 0.3s;
+}
+
+.user-profile-tabs .active {
+    border-bottom-color: #007bff;
+}
+
+.user-profile-tabs a:hover {
+    border-bottom-color: #007bff;
+    color: white;
+}
+
+.user-profile-tabs a:first-child {
+    color: white;
+}
+
+.user-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about {
+    width: 900px;
+    padding: 20px;
+}
+
+.front-page {
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.community-karma {
+    padding: 20px;
+    text-align: center;
+}
+
+.karma-stats .stats-item p {
+    color: #000000;
+    font-weight: 600;
+}
+
+.about, .front-page, .community-karma {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 23%)
+}
+
+.about h3, .front-page h3, .community-karma h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about p, .front-page p, .community-karma p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.about a, .front-page a, .community-karma a {
+    color: #252525;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.content-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.collaborators {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.collaborator {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.collaborator img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.karma-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.karma-stats .stats-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.karma-stats .stats-item span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #666;
+}
